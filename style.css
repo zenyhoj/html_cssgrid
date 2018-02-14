@@ -1,3 +1,10 @@
+body {
+    background: url(images/img_bg.jpg) no-repeat center -60px;
+    background-size: cover;
+    /* position: relative; */
+    font-family: Lora, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -15,6 +22,14 @@ grid-area: header;
 text-align: center;
 }
 
+#mainHeader h1{
+    margin-bottom: 0px;
+}
+
+#mainHeader p{
+    margin-top: 0px !important;
+}
+
 main{
     grid-area: main;
     grid-column: 2/3;
@@ -26,6 +41,7 @@ main p{
     max-width: 400px;
     white-space: normal;
     text-align: justify;
+    font-size: 1em;
     
 }
 
