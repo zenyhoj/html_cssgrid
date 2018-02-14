@@ -1,0 +1,48 @@
+* {
+    font-family: Lora, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: url(images/img_bg.jpg) no-repeat center -60px;
+    background-size: cover;
+    /* background-clip: content-box; */
+    /* background-position: 0px 25%; */
+    /* background-position: 20px; */
+
+    
+      /* background: radial-gradient(circle, black, white); */
+    position: relative;
+}
+
+div.container main {
+    /* display: grid; */
+    width: 450px;
+    line-height: 1.5em;
+    position: absolute;
+    left: 33%;
+    /* text-align: justify; */
+}
+
+main p{
+    text-align: justify;
+    font-size: .85rem;
+}
+
+main address{
+    text-align: right;
+    font-size: .85rem;
+}
+
+h1{
+    text-align: center;
+    /* color: yellow; */
+}
+
+#mainHeader p{
+    margin-top: 0px !important;
+}
+
+#mainHeader h1{
+    margin-bottom: 5px;
+}
