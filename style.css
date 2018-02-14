@@ -17,8 +17,30 @@ text-align: center;
 
 main{
     grid-area: main;
-    text-align: center;
-    width: 30%;
-    align-items: center;
-    justify-content: center;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+main p{
+    max-width: 400px;
+    white-space: normal;
+    text-align: justify;
+    
+}
+
+main address {
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 400px){
+    main {
+        grid-column: 1/4;
+        /* padding: 3px; */
+    }
+
+    main p{
+        padding: 3px;
+    }
 }
