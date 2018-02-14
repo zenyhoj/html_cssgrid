@@ -8,8 +8,12 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: 150px;
     grid-template-areas: "header header header" "main main main";
 }
+
+
+
 
 #mainHeader {
     grid-area: header;
@@ -19,6 +23,7 @@ body {
 #mainHeader h1 {
     margin-bottom: 0px;
     font-size: 2em;
+    text-transform: uppercase;
 }
 
 #mainHeader p {
@@ -45,14 +50,55 @@ main address {
     font-size: .8em;
 }
 
+/* horizontal line */
+
+.rule {
+    max-width: 230px;
+    height: 1px;
+    position: relative;
+    left: 41.5%;
+    top: -10px;
+    background: rgb(44, 44, 44);
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    /* text-align: center; */
+}
+
+.rule:before,
+.rule:after {
+    content: '';
+    height: 6px;
+    width: 6px;
+    border-radius: 10px;
+    float: left;
+    background: #000;
+    margin-top: -3px;
+}
+
+.rule:after {
+    float: right;
+}
+
+/* end of horizontal line */
+
 /* Media Queries */
 
 @media only screen and (max-width: 400px) {
+
+    body {
+        background: url(images/img_bg.jpg) no-repeat center 160px;
+        background-size: cover;
+    }
     main {
         grid-column: 1/4;
         /* padding: 3px; */
     }
     main p {
         padding: 3px;
+    }
+
+    .rule{
+        left: 10%;
     }
 }
